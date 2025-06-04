@@ -1,0 +1,197 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Custom Navbar with Transparent Background and Blur Effect */
+.navbar-transparent-blur {
+  background-color: rgba(0, 0, 0, 0.4); /* Transparent with slight opacity */
+  backdrop-filter: blur(10px); /* Apply blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Optional: Adds shadow for contrast */
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: top 0.3s; /* Smooth transition for showing/hiding */
+}
+
+/* Inner Layout */
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.logo span:first-child {
+  color: #1cdb62; /* Green for 'Arena' */
+}
+
+.logo span:last-child {
+  color: #000000; /* Black for 'Reserve' */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #000000;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links li:hover {
+  color: #16a34a;
+}
+
+/* Common Button Style (Login, Register, Logout) */
+.btn-transparent {
+  background-color: transparent;
+  color: #16a34a; /* Green color */
+  border: 1px solid #16a34a; /* Green border */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-transparent:hover {
+  background-color: #16a34a; /* Green background on hover */
+  color: white; /* White text on hover */
+}
+
+.btn-transparent:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.5); /* Green outline on focus */
+}
+
+/* Book Now button */
+.navbar-transparent-blur .btn-success {
+  background-color: transparent;
+  color: #16a34a; /* Green color */
+  border: 1px solid #16a34a; /* Green border */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-transparent-blur .btn-success:hover {
+  background-color: #16a34a; /* Green background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .book-now-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar-inner {
+    padding: 1rem;
+  }
+}
+
+/* Scroll Behavior - Navbar hides when scrolling down */
+.navbar-hidden {
+  top: -80px; /* Adjust this value based on navbar height */
+}
+
+/* Filter Icon (Mobile) */
+.filter-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Show the filter icon only on mobile screens */
+@media (max-width: 764px) {
+  .filter-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none; /* Hide links on mobile */
+  }
+}
+
+/* Filter Sidebar Styles */
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.filter-sidebar.open {
+  left: 0;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-heading h3 {
+  color: #333;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.filter-content {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Desktop View */
+@media (min-width: 765px) {
+  .navbar {
+    background-color: transparent;
+  }
+
+  .filter-icon {
+    display: none; /* Hide filter icon on larger screens */
+  }
+
+  .navbar-links {
+    display: flex; /* Show navbar links on desktop */
+  }
+}

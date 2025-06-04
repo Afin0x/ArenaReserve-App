@@ -1,0 +1,73 @@
+Days | Afin 🎨 (UI/UX | Athul 🔐 
+Day 1 | Turf listing page (grid layout) | Firebase setup + Auth basics | DB setup (Firestore/MongoDB)
+Day 2 | Search & filter UI (location, sport) | Auth form with validation | QR code setup basics
+Day 3 | Turf card design + hover effects | Social login integration | Payment gateway research
+Day 4 | Booking flow UI: Step 1 (date/time) | Admin panel (add/edit turfs) | Availability logic setup
+Day 5 | Booking flow UI: Step 2 (form/buttons) | User dashboard (bookings/profile) | QR code logic + booking ID setup
+Day 6 | Progress bar animation in booking | Admin booking approval UI | Backend linking: availability + booking
+Day 7 | Confirmation page UI + QR preview | Protected routes (admin/user) | Connect DB to frontend
+Day 8 | Responsive polish (mobile + desktop) | Finalize admin panel | Integrate real-time updates
+Day 9 | Turf listing tweaks + animation | Auth logic testing | Backend polish + bug fixing
+Day 10 | Booking success screen + transitions | Final dashboard cleanup | Payment gateway integration (Stripe)
+Day 11 | UI testing: all screens | Error handling & auth guards | Test DB operations
+Day 12 | UI fixes from feedback | Finalize booking logic | Payment confirmation response
+Day 13 | Assist confirmation + booking polish | Admin polish + test | QR code rendering & final polish
+Day 14 | Booking UI review & redesign if needed | Final protected routes check | Bug fixing
+Day 15 | Help integrate UI with backend data | Help with backend linking | Support UI integration
+Day 16 | Full flow UI test | Auth/Booking system test | DB/Availability test
+Day 17 | Final mobile responsiveness review | Testing & polish | Testing & polish
+Day 18 | Add final touches (colors, fonts) | Auth/logic code cleanup | Backend code cleanup
+Day 19 | Pre-deploy UI check | Pre-deploy logic check | Pre-deploy backend check
+Day 20 | Deploy + celebration 😎 | Deploy + celebration 🔥 | Deploy + celebration 🚀
+
+
+
+
+
+
+      {/* Team Section */}
+      <motion.section
+        className="team"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <h2>Meet the Team</h2>
+        <div className="team-members">
+          <div
+            className="team-member"
+            onClick={() =>
+              openLinkedIn("https://www.linkedin.com/in/sreelal-profile")
+            }
+          >
+            <img src="/sreelal.jpg" alt="SREELAL" />
+            <h3>SREELAL</h3>
+            <p>Product Manager</p>
+          </div>
+
+          <div
+            className="team-member"
+            onClick={() =>
+              openLinkedIn(
+                "https://www.linkedin.com/in/athul-krishna-pk-93a260305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              )
+            }
+          >
+            <img src="/athul1.jpg" alt="ATHUL" />
+            <h3>ATHUL</h3>
+            <p>Technical Architect</p>
+          </div>
+
+          <div
+            className="team-member"
+            onClick={() =>
+              openLinkedIn("https://www.linkedin.com/in/afin-nk-195366340/")
+            }
+          >
+            <img src="/img1.jpg" alt="AFIN" />
+            <h3>AFIN</h3>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </motion.section>

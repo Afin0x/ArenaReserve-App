@@ -1,0 +1,100 @@
+/* Ensure the body and html take up full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Ensure the body takes full height */
+}
+.margin-top{
+  margin-top: 90px;
+}
+/* Home section styles */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/public/turf-bg.jpg') no-repeat center center/cover;
+  padding: 0 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Content sits above overlay */
+.home-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  opacity: 0;  /* Initial opacity for transition */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-content .green {
+  color: #16a34a;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.home-book-btn {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-book-btn:hover {
+  background-color: #15803d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Transition states for CSSTransition */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

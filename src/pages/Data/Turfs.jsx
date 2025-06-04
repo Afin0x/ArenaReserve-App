@@ -1,0 +1,161 @@
+const turfs = [
+  {
+    name: "Green Field",
+    location: "Kozhikode",
+    rating: 4.6,
+    price: 750,
+    image:
+      "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: "5",
+    features: [
+      "Natural Grass",
+      "Floodlights for Night Play",
+      "Shower & Changing Rooms",
+      "Online Booking Available",
+      "WiFi Enabled",
+    ],
+  },
+  {
+    name: "Royal Turf",
+    location: "Kannur",
+    rating: 4.7,
+    price: 900,
+    image:
+      "https://images.unsplash.com/photo-1550881111-7cfde14b8073?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: "6",
+    features: [
+      "Synthetic Turf",
+      "24/7 Availability",
+      "Food & Beverages",
+      "Shower & Changing Rooms",
+      "Parking Available",
+    ],
+  },
+  {
+    name: "Elite Arena",
+    location: "Wayanad",
+    rating: 4.9,
+    price: 950,
+    image:
+      "https://images.unsplash.com/photo-1626946714684-cc7274f87fb4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: "7",
+    features: [
+      "High-Quality Synthetic Grass",
+      "Floodlights for Night Play",
+      "Café and Refreshments",
+      "Shower & Changing Rooms",
+      "Parking & Security",
+    ],
+  },
+  {
+    name: "GoalZone",
+    location: "Ernakulam",
+    rating: 4.5,
+    price: 800,
+    image: "https://d7wwomiynixj3.cloudfront.net/turf/LaligaoY70q.jpeg",
+    id: "8",
+    features: [
+      "Artificial Turf",
+      "24/7 Availability",
+      "Shower & Changing Rooms",
+      "WiFi Enabled",
+      "Food & Beverages",
+    ],
+  },
+  {
+    name: "Turbo Turf",
+    location: "Thrissur",
+    rating: 4.4,
+    price: 780,
+    image:
+      "https://d7wwomiynixj3.cloudfront.net/turf/BAktiveSportsHubray4MsWn9d.jpg",
+    id: "9",
+    features: [
+      "Premium Artificial Grass",
+      "Floodlights for Night Play",
+      "Free Parking",
+      "Shower & Changing Rooms",
+      "Online Booking Available",
+    ],
+  },
+  {
+    name: "Legends Turf",
+    location: "Palakkad",
+    rating: 4.6,
+    price: 820,
+    image:
+      "https://d7wwomiynixj3.cloudfront.net/turf/OldTraffordSportsCitynLgwTyeLIw.jpeg",
+    id: "10",
+    features: [
+      "Hybrid Grass Surface",
+      "Indoor & Outdoor Options",
+      "Free WiFi",
+      "Food & Refreshments",
+      "Shower & Changing Rooms",
+    ],
+  },
+  {
+    name: "ProPlay Arena",
+    location: "Alappuzha",
+    rating: 4.8,
+    price: 870,
+    image: "https://d7wwomiynixj3.cloudfront.net/turf/LaligaoY70q.jpeg",
+    id: "11",
+    features: [
+      "Artificial Grass with Shock Absorption",
+      "24/7 Availability",
+      "Shower & Changing Rooms",
+      "Food & Beverages",
+      "WiFi Enabled",
+    ],
+  },
+  {
+    name: "Striker's Spot",
+    location: "Kollam",
+    rating: 4.3,
+    price: 760,
+    image:
+      "https://d7wwomiynixj3.cloudfront.net/turf/OldTraffordSportsCitynLgwTyeLIw.jpeg",
+    id: "12",
+    features: [
+      "Premium Synthetic Turf",
+      "Floodlights for Night Play",
+      "Parking Available",
+      "Shower & Changing Rooms",
+      "Café on Site",
+    ],
+  },
+  {
+    name: "Phoenix Ground",
+    location: "Pathanamthitta",
+    rating: 4.5,
+    price: 800,
+    image:
+      "https://d7wwomiynixj3.cloudfront.net/turf/BAktiveSportsHubray4MsWn9d.jpg",
+    id: "13",
+    features: [
+      "Artificial Turf",
+      "Floodlights for Night Play",
+      "Food & Beverages",
+      "Shower & Changing Rooms",
+      "Parking Available",
+    ],
+  },
+  {
+    name: "Night Kick Arena",
+    location: "Kottayam",
+    rating: 4.7,
+    price: 890,
+    image: "https://d7wwomiynixj3.cloudfront.net/turf/LaligaoY70q.jpeg",
+    id: "14",
+    features: [
+      "High-Quality Synthetic Grass",
+      "Floodlights for Night Play",
+      "24/7 Availability",
+      "Shower & Changing Rooms",
+      "Online Booking & Payment",
+    ],
+  },
+];
+
+export default turfs;

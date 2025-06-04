@@ -1,0 +1,129 @@
+/* New wrapper for the card container */
+.turf-card-wrapper {
+  position: fixed;
+  top: 150px; /* Adjust this value based on your navbar height */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the card at the top */
+  z-index: 1000;
+  padding: 2rem 0; /* Added padding for spacing */
+}
+
+.turf-details-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.turf-details-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.turf-image {
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.turf-image:hover {
+  transform: scale(1.05);
+}
+
+.turf-name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+}
+
+.turf-location {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.turf-rating {
+  font-size: 18px;
+  color: #f1b1b1;
+}
+
+.turf-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #28a745;
+}
+
+.turf-features h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.turf-features ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.turf-features li {
+  font-size: 16px;
+  color: #555;
+}
+
+.slot-button {
+  min-width: 100px;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+.book-now-button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #228b22;
+  border: none;
+}
+
+.book-now-button:hover {
+  background-color: #1dc01d;
+}
+
+.no-turf {
+  font-size: 18px;
+  color: #dc3545;
+}
+
+.no-turf h4 {
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .turf-details-card {
+    padding: 2rem;
+  }
+
+  .turf-image {
+    max-height: 250px;
+  }
+
+  .turf-name {
+    font-size: 28px;
+  }
+
+  .turf-price {
+    font-size: 20px;
+  }
+
+  .book-now-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

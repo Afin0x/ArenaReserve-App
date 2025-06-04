@@ -1,0 +1,55 @@
+/* Custom card styling for the booking cards */
+.my-bookings-container .card {
+  background-color: #ffffff; /* White background */
+  border-radius: 30px; /* Rounded corners */
+  padding: 2rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-bookings-container .card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* Heading for the cards */
+.turf-name {
+  color: #16a34a; /* Green color for the heading */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Location, Rating, and Price Text */
+.turf-location,
+.turf-rating,
+.turf-price {
+  font-size: 1rem;
+  color: #333333; /* Dark gray for the text */
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling for "Cancel Booking" */
+
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .my-bookings-container .card {
+    padding: 1.5rem;
+  }
+
+  .turf-name {
+    font-size: 1.25rem;
+  }
+
+  .turf-location,
+  .turf-rating,
+  .turf-price {
+    font-size: 0.9rem;
+  }
+
+  button[type="button"] {
+    font-size: 0.95rem;
+  }
+}

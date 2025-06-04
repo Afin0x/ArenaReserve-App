@@ -1,0 +1,30 @@
+/* Footer style */
+footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent; /* Transparent background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    z-index: 1000; /* Ensure it's above all other content */
+    backdrop-filter: blur(10px)
+  }
+  
+  /* Link styling in the footer */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: Remove scrollbar */
+  
+  

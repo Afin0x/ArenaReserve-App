@@ -1,0 +1,77 @@
+/* Form container card */
+.login-form {
+  background-color: #ffffff; /* White background */
+  border-radius: 300px;
+  padding: 2rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Heading */
+.login-form h2 {
+  color: #16a34a; /* Green color for the heading */
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input fields */
+.form-control {
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 10px solid #d1d5db; /* Subtle gray border */
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #16a34a; /* Green border on focus */
+  box-shadow: 0 0 0 0.1rem rgba(22, 163, 74, 0.25); /* Subtle green glow */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #16a34a; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #15803d; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}
+
+/* Link styling for 'Create Account' text */
+.login-form .text-center a {
+  color: #16a34a; /* Green for the link */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-form .text-center a:hover {
+  color: #15803d; /* Darker green on hover */
+}

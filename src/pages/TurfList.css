@@ -1,0 +1,123 @@
+/* 🌿 Global Page Styles */
+.bg {
+  background-color: #f9fafb !important;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* 🧊 Sidebar Styling */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.shadow-md {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+/* 🌱 Heading Section */
+.text-4xl {
+  font-size: 2.5rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text{
+  color: #ffffff;
+}
+
+.tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.text-gray-500 {
+  color: #ffffff;
+}
+
+/* ✨ Turf Card Effects */
+.hover\:scale-\[1\.02\]:hover {
+  transform: scale(1.02);
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/* 💡 Responsive Padding */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:px-5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+.turf-list-container {
+  min-height: 100vh;
+  background: url('/public/turf-bg.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  overflow: auto;
+  position: relative;
+}
+
+.turf-list-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.turf-list-content {
+  position: relative;
+  z-index: 1;
+}
+.turf-list-container {
+  min-height: 100vh;
+  background: url('/public/turf-bg.jpg') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  overflow-y: auto;
+  position: relative;
+}
+
+.turf-list-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.turf-list-content {
+  position: relative;
+  z-index: 1;
+}
+.possition-filter{
+  position: flex;
+}

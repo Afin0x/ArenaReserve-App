@@ -1,0 +1,263 @@
+/* Filter Sidebar */
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  width: 260px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: flex-start; /* Align content at the top */
+}
+
+/* Heading Style */
+.filter-heading {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Filter Sections */
+.filter-section {
+  margin-bottom: 1.2rem;
+}
+
+/* Select Input Style */
+.filter-select,
+.filter-range {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.filter-select {
+  height: 36px;
+}
+
+/* Price Range Text */
+.price-range-text {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Price Display */
+.price-display {
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Checkbox Label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  color: #fff;
+}
+
+/* Checkbox Input */
+.checkbox-input {
+  margin-right: 5px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.toggle-btn.open {
+  left: 270px; /* Sidebar width */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .toggle-btn.open {
+    left: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-btn.open {
+    left: 200px;
+  }
+
+  /* Reduce padding for small screens */
+  .filter-sidebar {
+    padding: 15px 10px;
+  }
+
+  .filter-heading {
+    font-size: 1.4rem;
+  }
+}
+/* Modern sidebar container */
+.modern-filter-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Card style */
+.modern-filter-card {
+  width: 90%;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title */
+.filter-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+select,
+input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Checkboxes */
+.checkbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.checkbox-list label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .modern-filter-container {
+    top: 90px;
+    left: 20px;
+    bottom: auto;
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .modern-filter-card {
+    width: 280px;
+  }
+}
+/* Modern sidebar container */
+.modern-filter-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+/* Card style */
+.modern-filter-card {
+  width: 90%;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Desktop view adjustments */
+@media (min-width: 768px) {
+  .modern-filter-container {
+    top: 50%;
+    left: 20px;
+    bottom: auto;
+    width: auto;
+    transform: translateY(-50%); /* Vertical center */
+    justify-content: flex-start;
+  }
+
+  .modern-filter-card {
+    width: 280px;
+  }
+}

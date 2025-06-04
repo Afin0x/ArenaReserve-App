@@ -1,0 +1,114 @@
+/* Main container */
+.turf-zone {
+    max-width: 800px;
+    margin-top: 110px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  /* Form heading */
+  .turf-zone-heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form labels */
+  .input-label {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form controls */
+  .input-field {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 0.8rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  .input-field:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #16a34a;
+    box-shadow: none;
+    color: #fff;
+  }
+  
+  /* Features section */
+  .features-heading {
+    color: #16a34a;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Add Feature Button */
+  .add-feature-btn {
+    background-color: transparent;
+    color: #16a34a;
+    border: 1px solid #16a34a;
+    padding: 0.7rem 1.5rem;
+    border-radius: 999px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .add-feature-btn:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #16a34a;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #15803d;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #b91c1c;
+  }
+  
+  /* Row spacing */
+  .row {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .turf-zone {
+      margin-top: 60px;
+      padding: 1.5rem;
+    }
+  
+    .turf-zone-heading {
+      font-size: 2rem;
+    }
+  }
+  

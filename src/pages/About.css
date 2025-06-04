@@ -1,0 +1,218 @@
+/* Apply full-page background image */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/Users/mac/Desktop/learning react/ArenaReserve-App/public/turf-bg.jpg') no-repeat center center fixed;
+    background-size: cover; /* Make the image cover the entire screen */
+    background-position: center center;
+    height: 100vh; /* Ensure it covers the full height */
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* White text for readability */
+  }
+  
+  /* About Us Page Styles */
+  .about-us {
+    padding: 40px 20px;
+    margin-top: 100px; /* Ensure content is below the navbar */
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Add a subtle blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    margin-bottom: 40px;
+    color: #fff; /* White text */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff; /* Bright white for the title */
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Mission Section */
+  .mission {
+    text-align: center;
+    margin: 60px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  .mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .mission p {
+    font-size: 1.1rem;
+    color: #ddd; /* Lighter gray for the mission text */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    border-radius: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .feature-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background for each item */
+    border-radius: 10px;
+    padding: 25px;
+    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #fff; /* White for heading */
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: #ddd; /* Lighter gray for description */
+  }
+  
+  /* Team Section */
+  .team {
+    margin: 60px 0;
+    text-align: center;
+  }
+  
+  .team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 30%;
+  }
+.team-member img {
+  width: 120px; /* smaller size */
+  height: 120px; /* smaller size */
+  object-fit: cover; /* crop and zoom nicely */
+  border-radius: 50%; /* perfect circle */
+  margin-bottom: 10px; /* small space under image */
+  border: 3px solid #ffffff; /* thin white border for neatness */
+  transition: transform 0.3s ease; /* slight zoom on hover */
+  object-position: center; 
+  cursor: pointer;
+}
+
+/* Slight zoom when hover */
+.team-member img:hover {
+  transform: scale(1.05);
+}
+
+  
+  .team-member h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .team-member p {
+    color: #ddd;
+    font-size: 1rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background with dark overlay */
+    padding: 50px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .contact a {
+    color: #00bfff; /* Blue color for contact links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .feature-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
